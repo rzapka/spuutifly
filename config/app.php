@@ -177,7 +177,6 @@ return [
         \App\Providers\AlbumServiceProvider::class,
         \App\Providers\PlaylistServiceProvider::class,
         \App\Providers\UserServiceProvider::class,
-        Yajra\Oci8\Oci8ServiceProvider::class
 
     ],
 
