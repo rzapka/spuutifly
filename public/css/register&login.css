@@ -1,0 +1,414 @@
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+@media (max-width: 850px) and (orientation: landscape) {
+  body {
+    flex-direction: column;
+    min-height: 150vh;
+  }
+}
+@media (orientation: portrait) {
+  body {
+    flex-direction: column;
+    min-height: 150vh;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  box-shadow: 0 0 0 1000px transparent inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.registerForm, .loginForm {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 5%;
+  left: 20%;
+}
+@media (max-width: 850px) and (orientation: landscape) {
+  .registerForm, .loginForm {
+    position: inherit;
+    margin: 0 auto;
+  }
+}
+@media (orientation: portrait) {
+  .registerForm, .loginForm {
+    position: inherit;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1440px) and (orientation: landscape) {
+  .loginForm {
+    left: 8%;
+  }
+}
+
+@media (max-width: 1440px) and (orientation: landscape) {
+  .registerForm {
+    left: 13%;
+  }
+}
+
+.registerForm div, .loginForm div {
+  text-align: center;
+}
+
+.registerForm h1, .loginForm h1 {
+  margin: 5vh auto;
+}
+@media (max-width: 1440px) and (orientation: landscape) {
+  .registerForm h1, .loginForm h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 850px) and (orientation: landscape) {
+  .registerForm h1, .loginForm h1 {
+    font-size: 25px;
+  }
+}
+@media (orientation: portrait) {
+  .registerForm h1, .loginForm h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 600px) and (orientation: portrait) {
+  .registerForm h1, .loginForm h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 420px) and (orientation: portrait) {
+  .registerForm h1, .loginForm h1 {
+    font-size: 20px;
+  }
+}
+
+label {
+  margin-top: 20px;
+}
+@media (max-width: 1440px) and (orientation: landscape) {
+  label {
+    font-size: 20px;
+  }
+}
+@media (max-width: 850px) and (orientation: landscape) {
+  label {
+    font-size: 15px;
+  }
+}
+@media (orientation: portrait) {
+  label {
+    font-size: 30px;
+  }
+}
+@media (max-width: 600px) and (orientation: portrait) {
+  label {
+    font-size: 20px;
+  }
+}
+@media (max-width: 420px) and (orientation: portrait) {
+  label {
+    font-size: 15px;
+  }
+}
+
+div.remember-me {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.form-check-label {
+  margin-top: 0;
+  margin-left: 5px;
+}
+
+.form-check-input {
+  margin-bottom: 5px;
+  margin-left: -15px;
+}
+@media (max-width: 420px) and (orientation: portrait) {
+  .form-check-input {
+    margin-bottom: 8px;
+    margin-left: -12px;
+    height: 10px !important;
+  }
+}
+
+@media (max-width: 1440px) and (orientation: landscape) {
+  .btn-link {
+    font-size: 20px;
+  }
+}
+@media (max-width: 850px) and (orientation: landscape) {
+  .btn-link {
+    font-size: 15px;
+  }
+}
+@media (orientation: portrait) {
+  .btn-link {
+    font-size: 30px;
+  }
+}
+@media (max-width: 600px) and (orientation: portrait) {
+  .btn-link {
+    font-size: 20px;
+  }
+}
+@media (max-width: 420px) and (orientation: portrait) {
+  .btn-link {
+    font-size: 15px;
+  }
+}
+
+.go-to-login, .go-to-register {
+  text-align: center;
+}
+@media (max-width: 1440px) and (orientation: landscape) {
+  .go-to-login, .go-to-register {
+    font-size: 20px;
+  }
+}
+@media (max-width: 850px) and (orientation: landscape) {
+  .go-to-login, .go-to-register {
+    font-size: 15px;
+    width: 30vw;
+  }
+}
+@media (orientation: portrait) {
+  .go-to-login, .go-to-register {
+    font-size: 30px;
+  }
+}
+@media (max-width: 600px) and (orientation: portrait) {
+  .go-to-login, .go-to-register {
+    font-size: 20px;
+  }
+}
+@media (max-width: 420px) and (orientation: portrait) {
+  .go-to-login, .go-to-register {
+    font-size: 15px;
+  }
+}
+
+.registerForm input, .loginForm input {
+  color: white;
+  line-height: 3vh;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #aaa;
+}
+@media (max-width: 1440px) and (orientation: landscape) {
+  .registerForm input, .loginForm input {
+    font-size: 20px;
+  }
+}
+@media (max-width: 850px) and (orientation: landscape) {
+  .registerForm input, .loginForm input {
+    font-size: 15px;
+    height: 5vh;
+  }
+}
+@media (orientation: portrait) {
+  .registerForm input, .loginForm input {
+    font-size: 30px;
+    height: 5vh;
+  }
+}
+@media (max-width: 600px) and (orientation: portrait) {
+  .registerForm input, .loginForm input {
+    font-size: 20px;
+  }
+}
+@media (max-width: 420px) and (orientation: portrait) {
+  .registerForm input, .loginForm input {
+    font-size: 15px;
+  }
+}
+
+.registerForm input:focus, .loginForm input:focus {
+  outline: none;
+  background: transparent;
+  border-bottom-color: white;
+}
+
+.registerBtn {
+  display: block;
+  padding: 1% 3%;
+  margin: 10% auto;
+  border: 2px solid white;
+  background-color: transparent;
+  border-radius: 10px;
+  width: 70%;
+  color: white;
+  height: 40px;
+  line-height: 100%;
+}
+@media (max-width: 1440px) and (orientation: landscape) {
+  .registerBtn {
+    font-size: 22px;
+  }
+}
+@media (max-width: 850px) and (orientation: landscape) {
+  .registerBtn {
+    font-size: 20px;
+    width: 80%;
+    height: 45px;
+  }
+}
+@media (orientation: portrait) {
+  .registerBtn {
+    font-size: 30px;
+    height: 50px;
+  }
+}
+@media (max-width: 600px) and (orientation: portrait) {
+  .registerBtn {
+    font-size: 20px;
+  }
+}
+@media (max-width: 420px) and (orientation: portrait) {
+  .registerBtn {
+    font-size: 15px;
+  }
+}
+
+div.line {
+  position: absolute;
+  left: 48%;
+  overflow: hidden;
+  height: 100vh;
+  width: 1px;
+  background-color: #999;
+}
+@media (max-width: 850px) and (orientation: landscape) {
+  div.line {
+    position: inherit;
+    width: 100%;
+    height: 3px;
+    margin-top: 5%;
+  }
+}
+@media (orientation: portrait) {
+  div.line {
+    position: inherit;
+    width: 100%;
+    height: 3px;
+    margin-top: 5%;
+  }
+}
+
+.caption {
+  position: absolute;
+  top: 20%;
+  left: 55%;
+}
+@media (max-width: 850px) and (orientation: landscape) {
+  .caption {
+    position: inherit;
+    margin: 10% auto;
+  }
+}
+@media (orientation: portrait) {
+  .caption {
+    position: inherit;
+    margin: 10% auto;
+  }
+}
+
+.caption h1 {
+  color: #41dd41;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 5%;
+}
+@media (max-width: 850px) and (orientation: landscape) {
+  .caption h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+@media (orientation: portrait) {
+  .caption h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) and (orientation: portrait) {
+  .caption h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 420px) and (orientation: portrait) {
+  .caption h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 850px) and (orientation: landscape) {
+  .caption h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media (orientation: portrait) {
+  .caption h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) and (orientation: portrait) {
+  .caption h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 420px) and (orientation: portrait) {
+  .caption h3 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 850px) and (orientation: landscape) {
+  .caption h5 {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+@media (orientation: portrait) {
+  .caption h5 {
+    font-size: 25px;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) and (orientation: portrait) {
+  .caption h5 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 420px) and (orientation: portrait) {
+  .caption h5 {
+    font-size: 12px;
+  }
+}
+
+.caption h5 i {
+  color: #41dd41;
+}

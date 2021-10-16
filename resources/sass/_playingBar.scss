@@ -1,0 +1,227 @@
+.playingBarContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    height:10vh;
+    background-color: #3e3e3e;
+    color: #bbb;
+    @media(max-width:850px) and (orientation: landscape) {
+        height:20vh;
+    }
+}
+.playingBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #3e3e3e;
+    @media(max-width:600px) and (orientation:portrait) {
+        padding:0;
+    }
+}
+.songInfo, .audioHandler, .soundBar {
+    width:33%;
+}
+.songInfo {
+    @media(max-width:440px) and (orientation:portrait) {
+        width:40%;
+    }
+}
+.playingBar .songInfo img {
+    height:60px;
+    width:60px;
+    margin-right: 2%;
+    float:left;
+    @media(orientation: portrait) {
+        height:8vh !important;
+        width:8vh !important;
+    }
+    @media(max-width:440px) and (orientation: portrait) {
+        height:7vh !important;
+        width:7vh !important;
+    }
+}
+.playingBar .songInfo .capture {
+    height:100%;
+    float:left;
+    text-align: left;
+    h6 {
+        @media(orientation: portrait) {
+            font-size: 20px;
+            margin-top:5%;
+        }
+    }
+    h6 {
+        @media (max-width: 800px) and (orientation: portrait) {
+            font-size: 15px;
+        }
+        @media (max-width: 600px) and (orientation: portrait) {
+            font-size: 12px;
+        }
+        @media(max-width:440px) and (orientation: portrait) {
+            margin-top:7px;
+            font-size: 8px;
+        }
+    }
+
+}
+
+h2.noSongsInPlaylist {
+    line-height:10vh;
+    color: #949b98;
+    font-weight: bold;
+    @media(max-width:600px) and (orientation: portrait) {
+        font-size: 15px;
+    }
+}
+.fa-poo {
+    color: #ab581e;
+}
+.fa-sad-tear {
+    color: #3f9ae5;
+}
+ i.shuffle, i.prevSong, i.playSong, i.nextSong, i.repeatSong, i.fa-volume-up  {
+    margin-right:5%;
+    font-size: 23px;
+    cursor: pointer;
+    @media(orientation: portrait) {
+        font-size: 27px;
+    }
+    @media (max-width: 800px) and (orientation: portrait) {
+        font-size: 23px;
+    }
+     @media (max-width: 600px) and (orientation: portrait) {
+         font-size: 20px;
+     }
+     @media(max-width:440px) and (orientation: portrait) {
+         font-size: 15px;
+     }
+}
+i.fa-volume-up {
+    @media(max-width:1600px) {
+        font-size: 16px;
+    }
+    margin-right: 0;
+    @media (max-width: 800px) and (orientation: portrait) {
+        margin-top:3%;
+    }
+    @media (max-width: 440px) and (orientation: portrait) {
+        margin-top:10%;
+        font-size: 10px;
+    }
+}
+
+.startTimer, .endTimer {
+    @media(orientation: portrait) {
+        font-size: 20px;
+    }
+    @media (max-width: 800px) and (orientation: portrait) {
+        margin-top:3%;
+    }
+    @media (max-width: 600px) and (orientation: portrait) {
+        margin-top:4%;
+        font-size: 12px;
+    }
+    @media(max-width:440px) and (orientation: portrait) {
+        margin-top:6%;
+        font-size: 9px;
+    }
+}
+div.audioHandler {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    @media(orientation: portrait) {
+        width:50%;
+    }
+    @media(max-width:440px) and (orientation:portrait) {
+        width:60%;
+    }
+    @media(max-width:350px) and (orientation:portrait) {
+        justify-content: center;
+    }
+}
+.audioHandlerButtons {
+    width:50%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1% auto;
+    text-align: center;
+    @media (orientation: portrait) {
+        width:80%;
+        margin-top:5%;
+    }
+}
+.audioHandlerButtons i:hover {
+    color:white;
+}
+.soundBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media(max-width:440px) and (orientation:portrait) {
+        align-items: flex-start;
+        justify-self: end;
+    }
+
+}
+
+.timer {
+    display:flex;
+    justify-content: space-evenly;
+
+}
+.fa-angry {
+    color: #ef4949;
+}
+.fa-angry:hover {
+    color:red !important;
+}
+div.progressBarOfSong, div.progressBarOfVolume{
+    height:6px;
+    width:100%;
+    border-radius: 3px;
+    margin: 10px;
+    background-color: #756f6f;
+    cursor: pointer;
+    @media(orientation: portrait) {
+        height: 7px;
+    }
+    @media (max-width:600px) and (orientation: portrait) {
+        height: 5px;
+    }
+}
+div.progressBarOfSong {
+    @media (orientation: portrait) {
+        margin-top: 20px !important;
+    }
+    @media(max-width:600px) and  (orientation: portrait) {
+        margin-top: 15px !important;
+    }
+}
+div.progressBarOfVolume {
+    @media(orientation: portrait) {
+        width: 15vw !important;
+    }
+    @media (max-width: 800px) and (orientation: portrait) {
+        margin-top:8%;
+    }
+    @media(max-width:440px) and (orientation: portrait) {
+        margin-top:12%;
+    }
+}
+
+div.actualProgressOfSong, div.actualProgressOfVolume{
+    width:0;
+    height:100%;
+    background-color: #bbb;
+}
+div.actualProgressOfVolume {
+    width:50%;
+}
+
+

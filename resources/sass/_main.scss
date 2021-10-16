@@ -1,0 +1,282 @@
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+html {
+    position: relative;
+    background-color: #1f1e1e !important;
+}
+.mainContent {
+    float:left;
+    color: #ddd;
+    width: 85%;
+    min-height: 90vh;
+    margin-bottom: 10vh;
+    @media(orientation: landscape) {
+        margin-left:15%;
+        padding:20px;
+    }
+    @media (max-width:1024px) and (orientation: landscape) {
+        margin-left:20%;
+        width:75%;
+        margin-bottom:20vh;
+        .albumTitle {
+            font-size: 15px;
+        }
+    }
+    @media (orientation:portrait) {
+        margin-top:35%;
+        justify-content: space-between;
+        width:100%;
+        overflow: hidden;
+    }
+    @media(max-width:700px) and (orientation: portrait) {
+        margin-top:50%;
+    }
+    @media(max-width:440px) and (orientation: portrait) {
+        .albumTitle {
+            font-size: 10px;
+        }
+    }
+    @media(max-width:375px) and (orientation: portrait) {
+        margin-top:60%;
+    }
+    @media(max-width:320px) and (orientation: portrait) {
+        margin-top:80%;
+    }
+}
+.mainContent h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #ccc;
+    width:100%;
+    @media(orientation:portrait) {
+        margin-right:10%;
+        font-size: 40px;
+    }
+    @media(max-width:800px) and (orientation: portrait) {
+        margin-top:10%;
+        font-size:30px;
+    }
+    @media(max-width:600px) and (orientation: portrait) {
+        font-size:23px;
+    }
+}
+
+.add-playlist {
+    @media (orientation: portrait) {
+        height:7vh;
+        width:20vh;
+        font-size: 30px;
+    }
+    @media(max-width:800px) and (orientation: portrait) {
+        font-size:25px;
+    }
+    @media(max-width:600px) and (orientation: portrait) {
+        font-size:16px;
+    }
+    @media(max-width:375px) and (orientation: portrait) {
+        font-size:13px;
+    }
+    @media(max-width:320px) and (orientation: portrait) {
+        font-size:9px;
+    }
+}
+.shuffled {
+    color: #42f575;
+}
+.shuffled:hover {
+    color: #42f575 !important;
+}
+
+.items {
+    @media(max-width: 1400px) {
+        display:flex;
+        justify-content: space-evenly;
+        margin-bottom: 15%;
+    }
+    @media(orientation: portrait) {
+        justify-content: space-evenly;
+    }
+}
+
+.item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: 1400px) {
+        margin: 0 50px;
+    }
+
+}
+
+.item img {
+    cursor: pointer;
+    height:25vh;
+    @media(orientation: portrait) {
+        height:15vh;
+    }
+}
+.album-image {
+    border:none !important;
+}
+.item p {
+    color: #ddd;
+    font-size: 20px;
+    @media(orientation: portrait) {
+        width:150%;
+    }
+}
+
+.albumDetails {
+    display: flex;
+    height:35%;
+    @media(orientation: portrait) {
+        padding: 5%;
+    }
+}
+.playlistDetails {
+    display: flex;
+    height:31vh;
+    @media(orientation: portrait) {
+        padding: 5%;
+    }
+}
+.playlistName {
+    @media(max-width: 420px) and (orientation: portrait) {
+        width:100vw !important;
+    }
+}
+.itemImage img{
+    height:250px;
+    width:250px;
+}
+
+table, .backToAlbums {
+    @media(orientation: portrait) {
+        margin-left:5%;
+    }
+    @media(max-width:440px) and (orientation: portrait) {
+        font-size: 10px;
+    }
+
+}
+tr {
+    position: relative;
+}
+tr span.fas, tr span.index, span.fa-ellipsis-h  {
+    position: absolute;
+}
+tr span.fas {
+    color:white;
+    cursor: pointer;
+    visibility: hidden;
+}
+tr:hover{
+    background: #444;
+}
+tr:hover span.fas {
+    visibility: visible;
+}
+tr:hover span.index{
+    visibility: hidden;
+}
+span.fa-ellipsis-h {
+    right:40%;
+}
+
+.item .playlist-image, .itemImage img {
+    border:3px solid white;
+    background: #666;
+}
+.item .playlist-image  {
+    height:20vh;
+}
+.itemImage img {
+    height:25vh;
+    width:25vh;
+}
+.optionsMenu {
+    position: fixed;
+    display: none;
+}
+.select-menu {
+    color: #fff;
+    padding: 5% 8%;
+    background-color: #696969;
+    min-width: 10vw;
+    border-radius: 5px;
+    z-index: 1000;
+    border:none;
+    cursor: pointer;
+}
+.delPlaylistBtn {
+    position: absolute;
+    top:30%;
+    left:16%;
+    @media(max-width:1024px) {
+        top:10%;
+        left:70%;
+    }
+    @media (orientation: portrait) {
+        top:40%;
+    }
+    @media(max-width:440px) and (orientation: portrait) {
+        font-size: 10px;
+        top:63%;
+        left:5%;
+    }
+    @media(max-width:375px) and (orientation: portrait) {
+        top:65%;
+        left:40%;
+    }
+    @media(max-width:320px) and (orientation: portrait) {
+        top:75%;
+    }
+    border-radius: 20px;
+    color:#fff;
+    font-size:1rem;
+    font-weight: bold;
+    padding: 5px 12px;
+    border:3px solid white;
+    background-color: transparent;
+}
+
+h3.noPlaylist {
+    @media (orientation: portrait) {
+        text-align: center;
+    }
+    @media (max-width:600px) and (orientation: portrait) {
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+
+.playlist {
+    @media(orientation: landscape) {
+        margin-left:10%;
+    }
+}
+
+.title {
+    @media(max-width:440px) and (orientation: portrait) {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+.author, .howManySongs,  {
+    @media(max-width:440px) and (orientation: portrait) {
+        font-size: 15px;
+        text-align: center;
+    }
+}
+.backToPlaylists {
+    @media(max-width:440px) and (orientation: portrait) {
+        font-size: 10px;
+    }
+}
+

@@ -1,0 +1,94 @@
+.userPanel {
+    position: absolute;
+    left:0;
+    width:15%;
+    @media(orientation: landscape) {
+        height:100% !important;
+    }
+    @media(max-width:1024px) {
+        width:20%;
+    }
+    @media (orientation:portrait) {
+        width:100%;
+        min-height:10vh;
+    }
+    color:#aaa;
+    text-align: center;
+    background-color: black;
+    padding:30px 0;
+}
+.search i, .search button {
+    font-size:14px;
+    cursor:pointer;
+    @media(max-width:1024px) {
+        font-size: 10px;
+    }
+    @media (orientation:portrait) {
+        font-size: 20px;
+        margin-left:5%;
+    }
+    @media(max-width:440px) and (orientation: portrait) {
+        font-size: 15px;
+    }
+}
+.search button {
+    border:none;
+    background: transparent;
+    color: #ddd;
+}
+.search {
+    border-top: 2px solid #aaa;
+    border-bottom: 2px solid #aaa;
+}
+.searchInput {
+    border:none;
+    color:white;
+    height:50px;
+    width:80%;
+    background-color: transparent;
+    @media(max-width:1280px) {
+        font-size: 12px;
+    }
+    @media(max-width:1024px) {
+        font-size: 10px;
+    }
+    @media (orientation:portrait) {
+        font-size: 25px;
+        width:40%;
+    }
+    @media(max-width:440px) and (orientation: portrait) {
+        font-size: 15px;
+    }
+}
+.album p{
+    text-align: center;
+}
+.search input:focus {
+    outline: none;
+}
+.userPanel ul {
+    list-style: none;
+}
+.userPanel ul li {
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+    @media(max-width:1024px) {
+        font-size: 16px;
+    }
+    @media (orientation:portrait) {
+        font-size: 25px;
+    }
+    @media(max-width:440px) and (orientation: portrait) {
+        font-size: 15px;
+    }
+}
+.userPanel ul li a{
+    text-decoration: none;
+    color:#999;
+}
+
+.userPanel ul li a:hover {
+    color:white;
+}

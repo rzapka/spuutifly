@@ -1,0 +1,10 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/js/albums.js": "/js/albums.js",
+    "/js/album.js": "/js/album.js",
+    "/js/playlist.js": "/js/playlist.js",
+    "/js/searchAlbums.js": "/js/searchAlbums.js",
+    "/js/searchPlaylists.js": "/js/searchPlaylists.js",
+    "/css/app.css": "/css/app.css",
+    "/css/register&login.css": "/css/register&login.css"
+}

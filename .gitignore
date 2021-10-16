@@ -1,0 +1,28 @@
+/node_modules
+# /.idea
+# /bootstrap
+# /public/css
+# /public/js
+# /public/storage
+# /public/.htaccess
+# /public/favicon.ico
+# /public/index.php
+# /public/mix-manifest.json
+# /public/robots.txt
+# /public/web.config
+# /tests
+# /.editorconfig
+# /.envexample
+# /README.MD
+# # /storage/*.key
+/vendor
+# /server.php
+# /phpunit.xml
+# .env
+# .env.backup
+# .phpunit.result.cache
+# docker-compose.override.yml
+# Homestead.json
+# Homestead.yaml
+# npm-debug.log
+# yarn-error.log
