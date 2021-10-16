@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'oracle'),
+    'default' => env('DB_CONNECTION', 'mysql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -90,18 +90,6 @@ return [
             'prefix' => '',
             'prefix_indexes' => true,
         ],
-        'oracle' => [
-            'driver' => 'oracle',
-            'host' => 'localhost',
-            'port' => '1521',
-            'database' => 'spuutifly',
-            'service_name' => 'orcl',
-            'username' => 'c##kacper',
-            'password' => 'projekt',
-            'charset' => '',
-            'prefix' => '',
-        ]
-
     ],
 
     /*
